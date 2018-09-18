@@ -2,12 +2,14 @@
 body {
     font-size: 100%; /* 16px */
     font-family: $type-base;
+    color: $type-color-body;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $type-heading;
     margin: 0 0 0.5em 0;
     max-width: $type-linewidth;
+    color: $type-color-headings;
 }
 
 /* Traditional typographic scale
@@ -24,4 +26,15 @@ h6 {font-size: 1em; line-height: 1.5em} /* 16 / 16 = 1em */
 p {
     margin: 0 0 0.5em 0;
     max-width: $type-linewidth;
+}
+
+/* @font face */
+@font-face{ 
+	font-family: 'Aleo';
+	src: url('../fonts/aleo/Aleo-Regular-webfont.woff');
+}
+
+@font-face{ 
+	font-family: '3Dumb';
+	src: url('../fonts/3dumb/3Dumb-webfont.woff');
 }

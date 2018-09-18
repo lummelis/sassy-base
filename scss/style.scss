@@ -1,7 +1,9 @@
 // VARIABLES
-$type-base: Helvetica, Arial, sans-serif;
-$type-heading: Georgia, serif;
+$type-base: 'Aleo', Arial, sans-serif;
+$type-heading: '3Dumb', serif;
 $type-linewidth: 38em;
+$type-color-body: #333;
+$type-color-headings: #000;
 
 @import "partials/toc";
 @import "partials/typography";
