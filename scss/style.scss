@@ -1,9 +1,13 @@
 // VARIABLES
-$type-base: 'Aleo', Arial, sans-serif;
-$type-heading: '3Dumb', serif;
+$type-base: 'Open Sans', sans-serif;
+$type-heading: 'Bitter', serif;
 $type-linewidth: 38em;
 $type-color-body: #333;
 $type-color-headings: #000;
+$type-color-lightgrey: rgba(0,0,0,0.5);
+
+// COLOR
+$accent-color: 0935550;
 
 @import "partials/toc";
 @import "partials/typography";
