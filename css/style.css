@@ -73,10 +73,10 @@ hr {
 /* HELPERS */
 .headline {
   font-size: 4em;
-  color: 935550;
+  color: #093550;
   margin: 0; }
 
-.subheadline {
+.subheader {
   font-family: "Open Sans", sans-serif;
   font-size: 2em;
   font-weight: normal;
