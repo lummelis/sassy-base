@@ -1,3 +1,3 @@
 # sassy-base
 sassybase inclass assignment
-[view demo] (https://github.com/lummelis/sassy-base)
+[view demo] (https://lummelis.github.io/sassy-base/)
