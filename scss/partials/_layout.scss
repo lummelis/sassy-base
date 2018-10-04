@@ -50,7 +50,7 @@ body {
 
 
 /* Grid */
-$grid-column-gap: 1%;
+$grid-column-gap: 2%;
 
 .row {
     display: flex;
@@ -63,9 +63,13 @@ $grid-column-gap: 1%;
 
 .row > .column {
     flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 11em;
-    margin: 0 $grid-column-gap $grid-column-gap*2 $grid-column-gap;
+    //flex-basis: 11em;
+    margin: 0 $grid-column-gap/2 $grid-column-gap $grid-column-gap/2;
+
+    @media(min-width: $breakpoint-small - 1) {
+        flex-basis: $breakpoint-small;
+        flex-grow: 0;
+    }
 }
 
 .demo .column {
