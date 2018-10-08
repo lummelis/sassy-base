@@ -1,18 +1,21 @@
+/* SITE STRUCTURE */
+
 header {
+
     background: #c6538c;
     display: flex;
     justify-content: space-between;
-    
 
     a {
-        color: fff;
+        color: #fff;
     }
 
     .site-navigation {
         ul {
-            display: flex;
-            list-style: none; 
+            display: flex; 
+            list-style: none;
         }
+
         a {
             display: block;
             padding: 1em;
