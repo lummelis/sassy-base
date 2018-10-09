@@ -63,7 +63,7 @@ $grid-column-gap: 2%;
 .row > .column {
     flex-grow: 1;
     margin: 0 $grid-column-gap/2 $grid-column-gap $grid-column-gap/2;
-    @media(min-width: $breakpoint-small - 1) {
+    @media(max-width: $breakpoint-small - 1) {
         flex-grow: 0;
         flex-basis: $breakpoint-small;
     }
