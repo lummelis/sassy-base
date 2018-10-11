@@ -54,7 +54,7 @@ hr {
     margin: 0;
 }
 
-.subheader {
+.subheadline {
     font-family: $type-base;
     font-size: 2em;
     font-weight: normal;
@@ -66,4 +66,12 @@ hr {
     font-size: .875em;
     color: $type-color-lightgrey;
     margin-bottom: 1.5em;
+}
+
+.textcentered {
+    text-align: center;
+    * {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

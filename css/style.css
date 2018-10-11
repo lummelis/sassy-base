@@ -82,7 +82,7 @@ hr {
   color: #093550;
   margin: 0; }
 
-.subheader {
+.subheadline {
   font-family: "Open Sans", sans-serif;
   font-size: 2em;
   font-weight: normal;
@@ -93,6 +93,12 @@ hr {
   font-size: .875em;
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 1.5em; }
+
+.textcentered {
+  text-align: center; }
+  .textcentered * {
+    margin-left: auto;
+    margin-right: auto; }
 
 /* Components */
 /* Buttons */
@@ -122,6 +128,12 @@ a.button,
     background-color: #069;
     color: #fff;
     border-color: #069; }
+
+/* Media */
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto; }
 
 /* Layout */
 /* Media Queries */
@@ -172,6 +184,10 @@ body {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  .row.swapped {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
 
 .row > .column {
   -webkit-flex-grow: 1;
@@ -186,6 +202,8 @@ body {
       -webkit-flex-basis: 768px;
       -ms-flex-preferred-size: 768px;
       flex-basis: 768px; } }
+  .row > .column.one-half {
+    width: 48%; }
 
 .demo .column {
   padding: 1em;
@@ -242,3 +260,22 @@ body {
 
 section {
   padding: 3em 0; }
+
+/* Hero */
+.hero {
+  background: #faeff5;
+  padding: 5em 0; }
+
+.sectionhead {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+  margin: 2em auto 1em auto; }
+
+.sectionhead:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #093550;
+  width: 10%;
+  margin: 1.5em auto 4em auto; }
