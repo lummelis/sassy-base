@@ -49,13 +49,13 @@ body {
 }
 
 /* Grid */
-$grid-column-gap: 2%;
+//$grid-column-gap: 2%;
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -$grid-column-gap/2;
-    margin-right: -$grid-column-gap/2;
+    //margin-left: -$grid-column-gap/2;
+    //margin-right: -$grid-column-gap/2;
     align-content: center;
     justify-content: center;
     &.swapped {
@@ -65,15 +65,44 @@ $grid-column-gap: 2%;
 
 .row > .column {
     flex-grow: 1;
-    margin: 0 $grid-column-gap/2 $grid-column-gap $grid-column-gap/2;
+    //margin: 0 $grid-column-gap/2 $grid-column-gap $grid-column-gap/2;
+    margin: 0 1% 2% 1%;
     @media (max-width: $breakpoint-small - 1) {
         flex-grow: 0;
         flex-basis: $breakpoint-small;
     }
     &.one-half {
-        width: 50- $grid-column-gap;
-    }
+        width: 48%;
+        //width: 50 - $grid-column-gap;
+      }
+      &.one-third {
+        width: 31.3333%;
+        //width: 33.3333 - $grid-column-gap;
+      }
+      &.one-fourth {
+        width: 23%;
+        //width: 25 - $grid-column-gap;
+      }
+      @media (min-width: $breakpoint-small) {
+        &.centered {
+          flex-grow: 0;
+          &.one-half,
+          &.one-third,
+          &.one-fourth {
+            // Increase margins to force stack
+            margin-left: 4%;
+            margin-right: 4%;
+          }
+        }
+      }
+    //Vertically Center Column Content
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+
+    
 
 //FOR DEMO PURPOSES
 .demo .column {
