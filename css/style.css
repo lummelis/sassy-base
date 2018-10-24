@@ -176,9 +176,11 @@ body {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
@@ -191,16 +193,7 @@ body {
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  margin: 0 1% 2% 1%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  margin: 0 1% 2% 1%; }
   @media (max-width: 767px) {
     .row > .column {
       -webkit-flex-grow: 0;
@@ -224,6 +217,39 @@ body {
         margin-left: 4%;
         margin-right: 4%; } }
 
+.fade-in {
+  opacity: 0;
+  -webkit-animation: myfade 4s forwards;
+  animation: myfade 4s forwards; }
+
+.fade-in:nth-child(2) {
+  -webkit-animation-delay: .10s;
+  animation-delay: .10s; }
+
+.fade-in:nth-child(3) {
+  -webkit-animation-delay: .25s;
+  animation-delay: .25s; }
+
+@-webkit-keyframes myfade {
+  from {
+    opacity: 0;
+    -webkit-transform: transformY(-10px) scale(0.9);
+    transform: transformY(-10px) scale(0.9); }
+  to {
+    opacity: 1;
+    -webkit-transform: transformY(0) scale(1);
+    transform: transformY(0) scale(1); } }
+
+@keyframes myfade {
+  from {
+    opacity: 0;
+    -webkit-transform: transformY(-10px) scale(0.9);
+    transform: transformY(-10px) scale(0.9); }
+  to {
+    opacity: 1;
+    -webkit-transform: transformY(0) scale(1);
+    transform: transformY(0) scale(1); } }
+
 .demo .column {
   padding: 1em;
   background: #ccc;
@@ -245,6 +271,10 @@ body {
     list-style: none;
     margin: 0;
     padding: 0; }
+    @media (max-width: 767px) {
+      .site-header .site-navigation ul,
+      .site-footer .site-navigation ul {
+        display: block; } }
   .site-header .site-navigation a,
   .site-footer .site-navigation a {
     display: block;
